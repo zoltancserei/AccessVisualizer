@@ -25,22 +25,23 @@ The tool has four components for accessing the files, joining the attribute info
 - the output is a Shapefile containing the ‘compared’ column with the difference between the selected travel modes
 
 
-The script can be run from the command-line interface; the output files will be stored in the current working directory.
+## Usage
 
+The script can be run from the command-line interface; the output files will be stored in the current working directory.
 The script contains four command line arguments:
 
 ### 1.	find (File finder)
--	usage: python visualize_access.py find YKR_ID
--	example: python visualize_access.py find 5986740
+-	__usage__: python visualize_access.py find YKR_ID
+-	__example__: python visualize_access.py find 5986740
 
 ### 2.	shp (Table joiner)
--	usage: python visualize_access.py shp YKR_ID
--	example: python visualize_access.py shp 5986740
+-	__usage__: python visualize_access.py shp YKR_ID
+-	__example__: python visualize_access.py shp 5986740
 
 ### 3.	map (Visualizer)
--	usage: python visualize_access.py map YKR_ID travel_mode style
--	example: python visualize_access.py map 5986740 public interactive
+-	__usage__: python visualize_access.py map YKR_ID travel_mode style
+-	__example__: python visualize_access.py map 5986740 public interactive
 
 ### 4.	compare (Comparison tool)
--	usage: python visualize_access.py compare YKR_ID comp modes
--	example: python visualize_access.py compare 5986740 distance public
+-	__usage__: python visualize_access.py compare YKR_ID comp modes
+-	__example__: python visualize_access.py compare 5986740 distance public
