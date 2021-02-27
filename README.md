@@ -9,18 +9,18 @@ This python script uses the following libraries: os, sys, glob, pandas, geopanda
 
 The tool has four components for accessing the files, joining the attribute information with spatial data, visualizing and comparing different travel modes:
 
-####1. File finder:
+###1. File finder:
   - search for files containing the user defined id (YKR_ID) in the input folder and it's subfolders
   - the output is a file path for further processing
 
-####2. Table joiner
+###2. Table joiner
   - create a spatial layer (Shapefile) by joining a text file with the spatial data based on id (YKR_ID)
 
-####3. Visualizer
+###3. Visualizer
 - create a map of the selected id (YKR_ID) based on the selected travel mode (walking, cycling, public transport, private car)
 - the map can be either static or interactive
 
-####4. Comparison tool
+###4. Comparison tool
 - compare travel times or travel distances between two different travel modes
 - the output is a Shapefile containing the ‘compared’ column with the difference between the selected travel modes
 
@@ -29,18 +29,18 @@ The script can be run from the command-line interface; the output files will be 
 
 The script contains four command line arguments:
 
-####1.	find (File finder)
+###1.	find (File finder)
 -	usage: python visualize_access.py find YKR_ID
 -	example: python visualize_access.py find 5986740
 
-####2.	shp (Table joiner)
+###2.	shp (Table joiner)
 -	usage: python visualize_access.py shp YKR_ID
 -	example: python visualize_access.py shp 5986740
 
-####3.	map (Visualizer)
+###3.	map (Visualizer)
 -	usage: python visualize_access.py map YKR_ID travel_mode style
 -	example: python visualize_access.py map 5986740 public interactive
 
-####4.	compare (Comparison tool)
+###4.	compare (Comparison tool)
 -	usage: python visualize_access.py compare YKR_ID comp modes
 -	example: python visualize_access.py compare 5986740 distance public
