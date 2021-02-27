@@ -3,7 +3,6 @@
 A set of tools for visualizing Helsinki Region Travel Time Matrix data set. 
 
 More information about the datasets and the data used: https://blogs.helsinki.fi/accessibility/helsinki-region-travel-time-matrix/
-The id (YKR_ID) values can be found in the attribute table of a Shapefile.
 
 The tool has four components for accessing the files, joining the attribute information with spatial data, visualizing and comparing different travel modes:
 
